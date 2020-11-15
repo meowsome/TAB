@@ -1,0 +1,175 @@
+<!--
+ _ __ ___   ___  _____      _____  ___  _ __ ___   ___ 
+| '_ ` _ \ / _ \/ _ \ \ /\ / / __|/ _ \| '_ ` _ \ / _ \
+| | | | | |  __/ (_) \ V  V /\__ \ (_) | | | | | |  __/
+|_| |_| |_|\___|\___/ \_/\_/ |___/\___/|_| |_| |_|\___|
+
+------------------------------------------------------
+----------------  meowsome.github.io  ----------------
+------------------------------------------------------
+Some scripts from outside sources were used in the making of this site. Credit to those people who made them!
+-->
+
+<html>
+
+<head>
+    <title>New Tab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="new,tab,page">
+    <meta name="description" content="New tab page">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+
+
+</head>
+
+<body>
+
+    <div class="full-width background-image parallax">
+        <div class="full-width half-height background-gradient">
+        </div>
+    </div>
+
+    <div id="main" class="full-width wrapper-vertical center section">
+        <div class="negative-header wrapper-horizontal center">
+            <div style="color:white;">
+                <div class="card-content center text-center wrapper-vertical">
+                    <div class="wrapper-horizontal" style="margin:22.5px 0 0 0;">
+                        <h1 id="time"></h1>
+                        <h5 id="timeExtra" style="margin-top:1.45em;"></h5>
+                    </div>
+                    <h6 id="date" class="gray-alt"></h6>
+                </div>
+            </div>
+        </div>
+        <div id="main-content" class="w9 masonry">
+            <a>
+                <div id="weather" class="card full-width align-center">
+                    <p id="weather-refresh" class="ellipsis ripple-dark"><b><i class="fas fa-sync"></i></b></p>
+                    <div class="card-content wrapper-vertical center text-center">
+                        <div class="wrapper-horizontal">
+                            <h2 id="temperature"></h2>
+                            <h6 id="temperatureExtra" style="margin-top:0.4em;">&deg;F</h6>
+                        </div>
+                        <img id="weather-icon" viewBox="0 0 100 100">
+                        <h5 id="weather-description" class="faded-alt"></h5>
+                        <div class="wrapper-horizontal">
+                            <h7 id="weather-high" class="gray"></h7>
+                            <h7 id="weather-low" class="gray"></h7>
+                        </div>
+                        <p id="weather-location" style="text-transform:capitalize;"></p>
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="card full-width align-center">
+                    <div class="card-content wrapper-vertical center">
+                        <h5>Put something else here i guess haha :)</h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div id="settings" class="full-width wrapper-vertical center section">
+        <div class="negative-header card w5 slidein-0-1s slidein">
+            <div class="card-content">
+                <h4>Settings</h4>
+                <i>Leave each field blank for automatic detection, or enter your own info.</i>
+                <form id="settings" method="POST" class="padding-small">
+                    <div class="selector">
+                        <label for="settings">Timezone</label>
+                        <ul>
+                            <li id="tz-default" class="selector-main ripple-light background">Default</li>
+                            <li id="tz-mit" class="ripple-light background">Midway Islands Time</li>
+                            <li id="tz-hst" class="ripple-light background">Hawaii Standard Time</li>
+                            <li id="tz-ast" class="ripple-light background">Alaska Standard Time</li>
+                            <li id="tz-pst" class="ripple-light background">Pacific Standard Time</li>
+                            <li id="tz-pnt" class="ripple-light background">Phoenix Standard Time</li>
+                            <li id="tz-mst" class="ripple-light background">Mountain Standard Time</li>
+                            <li id="tz-cst" class="ripple-light background">Central Standard Time</li>
+                            <li id="tz-est" class="ripple-light background">Eastern Standard Time</li>
+                            <li id="tz-iet" class="ripple-light background">Indiana Eastern Standard Time</li>
+                            <li id="tz-prt" class="ripple-light background">Puerto Rico and US Virgin Islands Time</li>
+                            <li id="tz-cnt" class="ripple-light background">Canada Newfoundland Time</li>
+                            <li id="tz-agt" class="ripple-light background">Argentina Standard Time</li>
+                            <li id="tz-bet" class="ripple-light background">Brazil Eastern Time</li>
+                            <li id="tz-cat" class="ripple-light background">Central African Time</li>
+                            <li id="tz-gmt" class="ripple-light background">Greenwich Mean Time</li>
+                            <li id="tz-uct" class="ripple-light background">Universal Coordinated Time</li>
+                            <li id="tz-ect" class="ripple-light background">European Central Time</li>
+                            <li id="tz-eet" class="ripple-light background">Eastern European Time</li>
+                            <li id="tz-art" class="ripple-light background">(Arabic) Egypt Standard Time</li>
+                            <li id="tz-eat" class="ripple-light background">Eastern African Time</li>
+                            <li id="tz-met" class="ripple-light background">Middle East Time</li>
+                            <li id="tz-net" class="ripple-light background">Near East Time</li>
+                            <li id="tz-plt" class="ripple-light background">Pakistan Lahore Time</li>
+                            <li id="tz-ist" class="ripple-light background">India Standard Time</li>
+                            <li id="tz-bst" class="ripple-light background">Bangladesh Standard Time</li>
+                            <li id="tz-vst" class="ripple-light background">Vietnam Standard Time</li>
+                            <li id="tz-ctt" class="ripple-light background">China Taiwan Time</li>
+                            <li id="tz-jst" class="ripple-light background">Japan Standard Time</li>
+                            <li id="tz-act" class="ripple-light background">Australia Central Time</li>
+                            <li id="tz-aet" class="ripple-light background">Australia Eastern Time</li>
+                            <li id="tz-sst" class="ripple-light background">Solomon Standard Time</li>
+                            <li id="tz-zst" class="ripple-light background">New Zealand Standard Time</li>
+                        </ul>
+                    </div>
+                    <div class="form-section">
+                        <input type="text" name="background" id="background">
+                        <label for="background">Background Image URL</label>
+                    </div>
+                    <div class="wrapper-horizontal">
+                        <div class="form-section">
+                            <input type="text" name="gradientColor1" id="gradientColor1">
+                            <label for="gradientColor1">1st Color (e.g. 86, 180, 211)</label>
+                        </div>
+                        <div class="form-section">
+                            <input type="text" name="gradientColor2" id="gradientColor2">
+                            <label for="gradientColor2">2nd Color (e.g. 0, 102, 65)</label>
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <input type="text" name="location" id="location">
+                        <label for="location">Location</label>
+                    </div>
+                    <div class="form-section">
+                        <input type="text" name="news" id="news">
+                        <label for="news">Subreddits (For News Feed - Separate with spaces, do not include /r/)</label>
+                    </div>
+                    <div class="padding-small">
+                        <a id="settingsSave" class="button ripple-light">Save&nbsp;&nbsp;<i class="fas fa-save"></i></a>
+                        <a id="settingsReset" class="button ripple-light">Reset to Default&nbsp;&nbsp;<i class="fas fa-undo"></i></a>
+                        <a id="settingsCancel" class="button ripple-light">Cancel&nbsp;&nbsp;<i class="fas fa-times"></i></a>
+                    </div>
+                </form>
+                <ul id="todos"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer full-width">
+        <div class="wrapper-horizontal padding-small center right">
+            <a href="#main" class="gray padding-small ripple-dark" style="border-radius:50%;">
+                <h7><i class="fas fa-home"></i></h7>
+            </a>
+            <a href="#settings" class="gray padding-small ripple-dark" style="border-radius:50%;">
+                <h7><i class="fas fa-cog"></i></h7>
+            </a>
+        </div>
+    </div>
+    <div class="notification align-center"></div>
+
+
+
+
+    <noscript>
+        <div class="noscript background center text-center wrapper-vertical">
+            <h1><i class="far fa-frown"></i></h1>
+            <p>JavaScript is not enabled in your browser, therefore many aspects to this website will not function correctly. In order to continue, it is suggested to enable JavaScript. <a href="http://www.enable-javascript.com/" target="_blank">Please click here to learn more and for instructions</a>, or <a href="">click here to reload the page</a>.</p>
+        </div>
+    </noscript>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="project.js"></script>
+</body>
+
+</html>
